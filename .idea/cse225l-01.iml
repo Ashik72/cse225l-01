@@ -2,6 +2,8 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dynarr_part3.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dynarr_part3.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dynarr_part2.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dynarr_part1.cpp" isTestSource="false" />

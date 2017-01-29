@@ -16,7 +16,7 @@ dynArr2::dynArr2() {
 dynArr2::dynArr2(int s) {
 
     data = new int[s];
-    size = 0;
+    size = s;
 }
 
 dynArr2::~dynArr2() {
