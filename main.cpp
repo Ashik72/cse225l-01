@@ -11,9 +11,9 @@ void run_part_3();
 
 int main() {
 
-    //run_part_1();
+    run_part_1();
     //run_part_2();
-    run_part_3();
+    //run_part_3();
 
     return 0;
 }
@@ -39,6 +39,9 @@ void run_part_1() {
 
     }
 
+//    obj1.~dynArr();
+//    obj2.~dynArr();
+
 
 }
 
@@ -48,7 +51,7 @@ void run_part_2() {
 
     cin >> count;
 
-    dynArr obj2(count);
+    dynArr2 obj2(count);
 
     for (int i = 0; i < count; i++) {
 
@@ -65,6 +68,32 @@ void run_part_2() {
         cout << obj2.get(i) << endl;
 
     }
+
+    cout << "Allocate: " << endl;
+
+    int all1;
+
+    cin >> all1;
+
+    obj2.allocate(all1);
+
+    for (int i = 0; i < all1; i++) {
+
+        int temp;
+
+        cin >> temp;
+
+        obj2.set(i, temp);
+
+    }
+
+    for (int i = 0; i < all1; i++) {
+
+        cout << obj2.get(i) << endl;
+
+    }
+
+    //obj2.~dynArr2();
 
 
 }
@@ -91,6 +120,8 @@ void run_part_3() {
 
 
     }
+
+//    obj2.~dynArr3();
 
 
 }

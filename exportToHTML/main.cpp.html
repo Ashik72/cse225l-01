@@ -33,9 +33,9 @@ main.cpp</FONT>
  
 </span><span class="s3">int </span><span class="s2">main() { 
  
-    </span><span class="s5">//run_part_1();</span><span class="s2"> 
+    run_part_1()</span><span class="s4">;</span><span class="s2"> 
     </span><span class="s5">//run_part_2();</span><span class="s2"> 
-    run_part_3()</span><span class="s4">;</span><span class="s2"> 
+    </span><span class="s5">//run_part_3();</span><span class="s2"> 
  
     </span><span class="s3">return </span><span class="s6">0</span><span class="s4">;</span><span class="s2"> 
 } 
@@ -61,6 +61,9 @@ main.cpp</FONT>
  
     } 
  
+</span><span class="s5">//    obj1.~dynArr();</span><span class="s2"> 
+</span><span class="s5">//    obj2.~dynArr();</span><span class="s2"> 
+ 
  
 } 
  
@@ -70,7 +73,7 @@ main.cpp</FONT>
  
     cin &gt;&gt; count</span><span class="s4">;</span><span class="s2"> 
  
-    dynArr obj2(count)</span><span class="s4">;</span><span class="s2"> 
+    dynArr2 obj2(count)</span><span class="s4">;</span><span class="s2"> 
  
     </span><span class="s3">for </span><span class="s2">(</span><span class="s3">int </span><span class="s2">i = </span><span class="s6">0</span><span class="s4">; </span><span class="s2">i &lt; count</span><span class="s4">; </span><span class="s2">i++) { 
  
@@ -87,6 +90,32 @@ main.cpp</FONT>
         cout &lt;&lt; obj2.get(i) &lt;&lt; endl</span><span class="s4">;</span><span class="s2"> 
  
     } 
+ 
+    cout &lt;&lt; </span><span class="s1">&quot;Allocate: &quot; </span><span class="s2">&lt;&lt; endl</span><span class="s4">;</span><span class="s2"> 
+ 
+    </span><span class="s3">int </span><span class="s2">all1</span><span class="s4">;</span><span class="s2"> 
+ 
+    cin &gt;&gt; all1</span><span class="s4">;</span><span class="s2"> 
+ 
+    obj2.allocate(all1)</span><span class="s4">;</span><span class="s2"> 
+ 
+    </span><span class="s3">for </span><span class="s2">(</span><span class="s3">int </span><span class="s2">i = </span><span class="s6">0</span><span class="s4">; </span><span class="s2">i &lt; all1</span><span class="s4">; </span><span class="s2">i++) { 
+ 
+        </span><span class="s3">int </span><span class="s2">temp</span><span class="s4">;</span><span class="s2"> 
+ 
+        cin &gt;&gt; temp</span><span class="s4">;</span><span class="s2"> 
+ 
+        obj2.set(i</span><span class="s4">, </span><span class="s2">temp)</span><span class="s4">;</span><span class="s2"> 
+ 
+    } 
+ 
+    </span><span class="s3">for </span><span class="s2">(</span><span class="s3">int </span><span class="s2">i = </span><span class="s6">0</span><span class="s4">; </span><span class="s2">i &lt; all1</span><span class="s4">; </span><span class="s2">i++) { 
+ 
+        cout &lt;&lt; obj2.get(i) &lt;&lt; endl</span><span class="s4">;</span><span class="s2"> 
+ 
+    } 
+ 
+    </span><span class="s5">//obj2.~dynArr2();</span><span class="s2"> 
  
  
 } 
@@ -113,6 +142,8 @@ main.cpp</FONT>
  
  
     } 
+ 
+</span><span class="s5">//    obj2.~dynArr3();</span><span class="s2"> 
  
  
 } 
